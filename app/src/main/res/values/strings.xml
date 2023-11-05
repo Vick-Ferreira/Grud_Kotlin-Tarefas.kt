@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LojaVirtualFirebase</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Erros Firebase Authentication-->
+
+    <string name="account_not_registered_redister_fragment">Nenhuma conta encontrada com este e-mail.</string>
+    <string name="invalid_email_register_fragment">Insira um e-mail válido.</string>
+    <string name="invalid_password_register_fragment">Senha inválida, tente novamente.</string>
+    <string name="email_in_use_register_fragment">Este e-mail já etá em uso.</string>
+    <string name="strong_password_register_fragment">Insira uma senha mais forte</string>
+    <string name="We_have_blocked_all_requests_from_this_device_due_to_unusual_activity">Devido a muitas tentativas, tente mais tarde!</string>
+    <string name="erro_generico">Erro, tente novamente!</string>
+    <string name="toobal">string tobar\n</string>
+</resources>

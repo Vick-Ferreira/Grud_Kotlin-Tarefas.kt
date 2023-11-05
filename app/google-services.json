@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "832316408423",
+    "project_id": "kotlin-grud",
+    "storage_bucket": "kotlin-grud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832316408423:android:306538f53b8d18e42a4ac2",
+        "android_client_info": {
+          "package_name": "com.grud.lojavirtualfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6gy4xApUcEetjbrh-OzF8kJ8ocV9XaT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

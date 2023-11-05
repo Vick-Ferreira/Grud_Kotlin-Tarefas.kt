@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_default">#8d4925</color>
+    <color name="color_toobar">#8d4925</color>
+    <color name="colorInput">#ecd6c0</color>
+
+    <color name="color_deletar">#FF4C3B</color>
+    <color name="color_editar">#03B6FC</color>
+    <color name="color_detalhes">#04D5C1</color>
+    <color name="color_calendario">#e6e6e6</color>
+
+
+    <color name="afazer">#DD7803</color>
+    <color name="fazendo">#03B6FC</color>
+    <color name="feito">#04D5C1</color>
+</resources>

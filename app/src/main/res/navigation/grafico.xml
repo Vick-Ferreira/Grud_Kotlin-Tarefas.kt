@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafico"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.grud.lojavirtualfirebase.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_form_TaskFragment"
+            app:destination="@id/form_TaskFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_authentication2"
+            app:destination="@id/authentication" />
+        <action
+            android:id="@+id/action_homeFragment_to_pedometroFragment"
+            app:destination="@id/pedometroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.grud.lojavirtualfirebase.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_splashFragment_to_authentication"
+            app:destination="@id/authentication"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/form_TaskFragment"
+        android:name="com.grud.lojavirtualfirebase.ui.Form_TaskFragment"
+        android:label="fragment_form__task"
+        tools:layout="@layout/fragment_form__task" >
+        <argument
+            android:name="task"
+            app:argType="com.grud.lojavirtualfirebase.Modal.Task"
+            app:nullable="true" />
+    </fragment>
+    <navigation android:id="@+id/authentication"
+        app:startDestination="@id/loginFragment">
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.grud.lojavirtualfirebase.ui.auth.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login" >
+            <action
+                android:id="@+id/action_loginFragment_to_registroFragment"
+                app:destination="@id/registroFragment" />
+            <action
+                android:id="@+id/action_loginFragment_to_recuperarFragment"
+                app:destination="@id/recuperarFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/registroFragment"
+            android:name="com.grud.lojavirtualfirebase.ui.auth.RegistroFragment"
+            android:label="fragment_registro" />
+        <fragment
+            android:id="@+id/recuperarFragment"
+            android:name="com.grud.lojavirtualfirebase.ui.auth.RecuperarFragment"
+            android:label="fragment_recuperar"
+            tools:layout="@layout/fragment_recuperar" />
+        <action
+            android:id="@+id/action_global_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </navigation>
+    <fragment
+        android:id="@+id/pedometroFragment"
+        android:name="com.grud.lojavirtualfirebase.PedometroFragment"
+        android:label="fragment_pedometro"
+        tools:layout="@layout/fragment_pedometro" />
+</navigation>
