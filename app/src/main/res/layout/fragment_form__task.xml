@@ -12,7 +12,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="272dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEditar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -170,81 +169,107 @@
 
     </LinearLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
 
-    <Button
-        android:id="@+id/btnAdicionar"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_input"
-        android:text="Adicionar"
-        android:textAllCaps="false"
-        android:textColor="@color/color_default"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDate"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+            android:id="@+id/btnEditar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/background_calendario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnCalendario"
+            android:layout_width="42dp"
+            android:layout_height="31dp"
+            android:src="@drawable/baseline_calendar_month_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnEditar"
+            app:layout_constraintStart_toStartOf="@+id/btnEditar"
+            app:layout_constraintTop_toTopOf="@+id/btnEditar" />
+
+        <TextView
+            android:id="@+id/etDate"
+            android:layout_width="100dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="36dp"
+            android:clickable="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnEditar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.511" />
 
 
-    <ProgressBar
-        android:id="@+id/prog"
-        android:layout_width="40dp"
-        android:layout_height="39dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:indeterminateTint="@color/white"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdicionar"
-        app:layout_constraintVertical_bias="0.176"
-        tools:visibility="visible" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
-    <TextView
-        android:id="@+id/btnEditar"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="349dp"
-        android:background="@drawable/background_calendario"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
-    <ImageView
-        android:id="@+id/btnCalendario"
-        android:layout_width="42dp"
-        android:layout_height="31dp"
-        android:src="@drawable/baseline_calendar_month_24"
-        app:layout_constraintBottom_toBottomOf="@+id/btnEditar"
-        app:layout_constraintEnd_toEndOf="@+id/btnEditar"
-        app:layout_constraintStart_toStartOf="@+id/btnEditar"
-        app:layout_constraintTop_toTopOf="@+id/btnEditar" />
+        <Button
+            android:id="@+id/btnAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_input"
+            android:text="Adicionar"
+            android:textAllCaps="false"
+            android:textColor="@color/color_default"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDate"
+            app:layout_constraintVertical_bias="0.121" />
 
-    <TextView
-        android:id="@+id/etDate"
-        android:layout_width="100dp"
-        android:layout_height="19dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="184dp"
-        android:clickable="false"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnEditar"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+        <ProgressBar
+            android:id="@+id/prog"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:indeterminateTint="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAdicionar"
+            app:layout_constraintVertical_bias="0.176"
+            tools:visibility="visible" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="202dp"
-        android:layout_height="212dp"
-        android:src="@drawable/fotoitem"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdicionar"
-        app:layout_constraintVertical_bias="1.0" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="160dp"
+            android:layout_height="137dp"
+            android:layout_gravity="end"
+            android:src="@drawable/fotoitem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAdicionar"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
