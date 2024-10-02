@@ -1,10 +1,34 @@
-# Grud_Kotlin-Tarefas.kt
+# Gerenciador de Tarefas
 
-PROJETO EM ANDAMENTO
-[https://drive.google.com/file/d/1AFNnNDqd_ny0AVBVd8Gpm1_FIserp_-Y/view?usp=drive_link](https://drive.google.com/file/d/1p4uFlkatM0EHU8It1Px2iOKQsf7UEKhg/view?usp=drive_link)
+Este projeto foi desenvolvido em **Kotlin** e faz uso do **Firebase**, incluindo o **Firebase Realtime Database** e a funcionalidade de autenticação. O objetivo principal do aplicativo é proporcionar uma experiência eficiente e amigável para o gerenciamento de tarefas.
 
-Este projeto foi desenvolvido em Kotlin e faz uso do Firebase, incluindo o Firebase Realtime Database e a funcionalidade de autenticação. O aplicativo tem como objetivo proporcionar uma experiência de gerenciamento de tarefas eficiente e amigável.
+## Funcionalidades
 
-O aplicativo oferece diversas funcionalidades, como a capacidade de listar, editar, excluir e adicionar tarefas. Para acessar o aplicativo, os usuários precisam se cadastrar fornecendo um endereço de e-mail e senha. Após o primeiro login bem-sucedido, o sistema verifica automaticamente as credenciais e direciona o usuário diretamente para a tela principal, agilizando o acesso às funcionalidades de gerenciamento de tarefas.
+- Listar, editar, excluir e adicionar tarefas.
+- Sistema de cadastro e login via e-mail e senha.
+- Autenticação segura utilizando o Firebase Authentication.
+- Acesso rápido após o primeiro login, com verificação automática de credenciais.
 
-Esta abordagem de autenticação garante a segurança dos dados do usuário, ao mesmo tempo em que proporciona uma experiência de uso simples e direta. Com o Firebase e o Kotlin, o projeto é capaz de oferecer um ambiente robusto e confiável para o gerenciamento de tarefas, tornando a vida dos usuários mais organizada e produtiva.
+## Tecnologias Utilizadas
+
+- **Kotlin**: Linguagem de programação utilizada para o desenvolvimento do aplicativo.
+- **Firebase Authentication**: Gerenciamento de autenticação de usuários.
+- **Firebase Realtime Database**: Banco de dados em tempo real para armazenamento das tarefas dos usuários.
+
+## Como Funciona
+
+1. **Cadastro**: O usuário se cadastra no aplicativo fornecendo um e-mail e uma senha.
+2. **Login**: Após o cadastro, o usuário faz login com suas credenciais.
+3. **Acesso Rápido**: Após o primeiro login, o sistema verifica automaticamente as credenciais no próximo acesso, direcionando o usuário diretamente para a tela principal.
+4. **Gerenciamento de Tarefas**: Os usuários podem criar, editar, excluir e listar suas tarefas no aplicativo.
+
+## Segurança
+
+- A autenticação com Firebase garante que apenas usuários autenticados possam acessar suas tarefas, protegendo os dados de forma segura.
+- A comunicação com o Firebase é feita de forma segura, garantindo a integridade e a privacidade das informações dos usuários.
+
+## Requisitos
+
+- **Kotlin 1.4 ou superior**
+- **Firebase SDK**
+- **Android Studio**
